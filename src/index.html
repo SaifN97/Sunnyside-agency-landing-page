@@ -21,14 +21,21 @@
     <main>
       <section class="header">
         <nav>
-          <div class="logo"></div>
+          <div class="head">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="sunnyside" />
+            </div>
+            <div class="hamburger">
+              <img src="./images/icon-hamburger.svg" alt="hamburger" />
+            </div>
+          </div>
           <div class="nav">
-            <div class="hamburger"></div>
+            <div class="triangle"></div>
             <ul class="nav-list">
               <li class="nav-item"><a href="#">About</a></li>
               <li class="nav-item"><a href="#">Services</a></li>
               <li class="nav-item"><a href="#">Projects</a></li>
-              <li class="nav-item"><a href="#">Contact</a></li>
+              <li class="nav-item"><a href="#" class="btn">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -36,15 +43,39 @@
         <div class="hero">
           <div class="container">
             <h1>We are creatives</h1>
-            <div class="arrow"></div>
-            <div class="img-header"></div>
+            <div class="arrow">
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="img-header">
+              <img
+                src="./images/mobile/image-header.jpg"
+                alt="orange"
+                class="mobile"
+              />
+              <img
+                src="./images/desktop/image-header.jpg"
+                alt="orange"
+                class="desktop"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section class="feature">
         <div class="row">
-          <div class="col transform-img"></div>
+          <div class="col transform-img">
+            <img
+              src="./images/mobile/image-transform.jpg"
+              alt="transform"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt="transform"
+              class="desktop"
+            />
+          </div>
           <div class="col feature-text">
             <h2>Transform your brand</h2>
             <p>
@@ -52,12 +83,26 @@
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <button>Learn more</button>
+            <div class="btn-container">
+              <button>Learn more</button>
+              <div class="yellow"></div>
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col standout-img"></div>
+          <div class="col standout-img">
+            <img
+              src="./images/mobile/image-stand-out.jpg"
+              alt="standout"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt="standout"
+              class="desktop"
+            />
+          </div>
           <div class="col feature-text">
             <h2>Stand out to the right audience</h2>
             <p>
@@ -65,14 +110,28 @@
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <button>Learn more</button>
+            <div class="btn-container">
+              <button>Learn more</button>
+              <div class="red"></div>
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col">
-            <div class="graphic-img"></div>
-            <div class="feature-text">
+            <div class="graphic-img">
+              <img
+                src="./images/mobile/image-graphic-design.jpg"
+                alt="graphic"
+                class="mobile"
+              />
+              <img
+                src="./images/desktop/image-graphic-design.jpg"
+                alt="graphic"
+                class="desktop"
+              />
+            </div>
+            <div class="feature-text accent-cyan overlay">
               <h3>Graphic design</h3>
               <p>
                 Great design makes you memorable. We deliver artwork that
@@ -82,8 +141,19 @@
             </div>
           </div>
           <div class="col">
-            <div class="photography-img"></div>
-            <div class="feature-text">
+            <div class="photography-img">
+              <img
+                src="./images/mobile/image-photography.jpg"
+                alt="photography"
+                class="mobile"
+              />
+              <img
+                src="./images/desktop/image-photography.jpg"
+                alt="photography"
+                class="desktop"
+              />
+            </div>
+            <div class="feature-text accent-blue overlay">
               <h3>Photography</h3>
               <p>
                 Increase your credibility by getting the most stunning,
@@ -106,7 +176,7 @@
               </p>
               <div class="col">
                 <h3>Emily R.</h3>
-                <p>Marketing Director</p>
+                <small>Marketing Director</small>
               </div>
             </div>
 
@@ -118,7 +188,7 @@
               </p>
               <div class="col">
                 <h3>Thomas S.</h3>
-                <p>Chief Operating Officer</p>
+                <small>Chief Operating Officer</small>
               </div>
             </div>
 
@@ -130,7 +200,7 @@
               </p>
               <div class="col">
                 <h3>Jennie F.</h3>
-                <p>Business Owner</p>
+                <small>Business Owner</small>
               </div>
             </div>
           </div>
@@ -138,24 +208,74 @@
       </section>
 
       <section class="gallery">
-        <div class="milk-bottles"></div>
-        <div class="orange"></div>
-        <div class="cones"></div>
-        <div class="sugercubes"></div>
+        <div class="row">
+          <div class="milk-bottles">
+            <img
+              src="./images/mobile/image-gallery-milkbottles.jpg"
+              alt="milk-bottles"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-gallery-milkbottles.jpg"
+              alt="milk"
+              class="desktop"
+            />
+          </div>
+          <div class="orange">
+            <img
+              src="./images/mobile/image-gallery-orange.jpg"
+              alt="orange"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-gallery-orange.jpg"
+              alt="orange"
+              class="desktop"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="cones">
+            <img
+              src="./images/mobile/image-gallery-cone.jpg"
+              alt="cone"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-gallery-cone.jpg"
+              alt="cone"
+              class="desktop"
+            />
+          </div>
+          <div class="sugercubes">
+            <img
+              src="./images/mobile/image-gallery-sugar-cubes.jpg"
+              alt="sugarcubes"
+              class="mobile"
+            />
+            <img
+              src="./images/desktop/image-gallery-sugarcubes.jpg"
+              alt="sugarcubes"
+              class="desktop"
+            />
+          </div>
+        </div>
       </section>
 
       <footer>
         <div class="footer-container">
-          <h3>sunnyside</h3>
+          <div class="logo">
+            <img src="./images/footer-logo.svg" alt="footerlogo" />
+          </div>
           <div class="footer-nav">
-            <ul>
+            <ul class="row">
               <li class="nav-item"><a href="#">About</a></li>
               <li class="nav-item"><a href="#">Services</a></li>
               <li class="nav-item"><a href="#">Projects</a></li>
             </ul>
           </div>
           <div class="social">
-            <ul>
+            <ul class="row">
               <li>
                 <a href="#"
                   ><img src="./images/icon-facebook.svg" alt="facebook"
@@ -181,5 +301,15 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".nav");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

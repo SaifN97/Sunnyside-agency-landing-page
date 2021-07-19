@@ -1,0 +1,276 @@
+@use "colors" as *;
+main {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.desktop {
+  display: none;
+}
+/* -----HEADER----- */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0.5em;
+}
+
+.header {
+  position: relative;
+  .hero {
+    height: 24.5rem;
+  }
+  h1 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .arrow {
+    width: 10%;
+    margin: 2em auto;
+  }
+  img {
+    z-index: -1;
+  }
+  .mobile {
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* -----NAV----- */
+.hamburger {
+  cursor: pointer;
+  &.active {
+    opacity: 0.5;
+  }
+}
+
+.nav {
+  display: none;
+  &.active {
+    background: $white;
+    width: 90%;
+    position: relative;
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    .nav-list {
+      margin: 0 auto;
+      padding: 1em 0;
+      text-align: center;
+    }
+    .nav-item {
+      padding: 1em;
+      font-size: 1.4rem;
+      &:hover,
+      :focus {
+        opacity: 0.65;
+      }
+      .btn {
+        text-transform: uppercase;
+        color: black;
+        background: $yellow;
+        border-radius: 100px;
+        padding: 0.5em 1em;
+      }
+      a {
+        color: $dark-grayish-blue;
+      }
+    }
+
+    .triangle {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      border-bottom: 2rem solid white;
+      border-left: 2rem solid transparent;
+    }
+  }
+}
+
+/* -----FEATURE SECTION----- */
+.col {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-text {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3em 0;
+  text-align: center;
+  h2 {
+    color: $very-dark-desaturated-blue;
+    font-size: 2rem;
+  }
+  p {
+    color: $dark-grayish-blue;
+    padding: 1.5em 0;
+  }
+  .btn-container {
+    position: relative;
+    width: 33%;
+    height: 0.5rem;
+    margin: 0 auto;
+    &:hover {
+      width: 35%;
+      .yellow,
+      .red {
+        opacity: 1;
+      }
+    }
+    button {
+      cursor: pointer;
+      font-weight: 900;
+      background: none;
+      outline: none;
+      border: none;
+      font-family: "Fraunces", serif;
+      text-transform: uppercase;
+      color: $very-dark-desaturated-blue;
+    }
+    .yellow,
+    .red {
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 0.7rem;
+      transform: translateY(-0.5rem);
+      background: $yellow;
+      border-radius: 100px;
+      opacity: 0.5;
+    }
+    .red {
+      background: $soft-red;
+    }
+  }
+  &.accent-cyan {
+    h3,
+    p {
+      color: $dark-desaturated-cyan;
+    }
+  }
+  &.accent-blue {
+    h3,
+    p {
+      color: $dark-blue;
+    }
+  }
+
+  &.overlay {
+    h3 {
+      font-size: 2rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+.graphic-img,
+.photography-img {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+/* -----TESTIMONIAL SECTION----- */
+
+.testimonials {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $grayish-blue;
+    padding: 2em 0;
+    text-align: center;
+  }
+
+  .card {
+    height: 21rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+      width: 25%;
+      border-radius: 50%;
+    }
+    h3 {
+      color: $very-dark-desaturated-blue;
+    }
+    p {
+      color: $very-dark-grayish-blue;
+    }
+    small {
+      color: $grayish-blue;
+    }
+  }
+}
+
+/* -----GALLERY SECTION----- */
+
+.gallery {
+  .row {
+    display: flex;
+    height: 11.5rem;
+  }
+}
+
+/* -----FOOTER SECTION----- */
+footer {
+  background: #70cbb9;
+  .logo {
+    padding: 1em;
+    img {
+      width: 10rem;
+    }
+  }
+}
+.footer-container {
+  padding: 2em 0.5em;
+  color: $dark-desaturated-cyan;
+  text-align: center;
+  h3 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-nav {
+    padding: 1em;
+    a {
+      color: $dark-moderate-cyan;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .social {
+    padding: 2em;
+
+    li {
+      &:hover {
+        opacity: 0.5;
+        scale: 1.1;
+      }
+    }
+  }
+}
